@@ -10,16 +10,6 @@ def init_game()->dict:
                  "player_1" : player_1,
                  "player_2" : player_2}
 
-    #TODO REMOVE===============================
-    print("===================================")
-    print("game initialized : ", game_dict )
-    print("===================================")
-    print("p1 hand", player_1["hand"])
-    print("p1 hand len", len(player_1["hand"]))
-    print("p2 hand", player_1["hand"])
-    print("p2 hand len", len(player_1["hand"]))
-
-
     return game_dict
 
 def play_round(p1:dict,p2:dict):
@@ -41,18 +31,7 @@ def create_player(name:str = "") -> dict:
         name = "AI"
     player = {"name":name,"hand":[],"won_pile":[]}
 
-    #TODO REMOVE===============================
-    print("===================================")
-    print("Ccrteated : ", player )
-
     return player
-
-
-#TODO REMOVE===============================
-if __name__ == "__main__":
-    # python -m game_logic.game
-    game_dict = init_game()
-    game_round = play_round(game_dict["player_1"],game_dict["player_2"])
 
 
 
