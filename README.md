@@ -1,2 +1,1 @@
-# a_segal_card_game
-card game in py. part of a test
+aharon segal class golan 204806889
