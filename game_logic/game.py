@@ -16,8 +16,8 @@ def init_game()->dict:
     print("===================================")
     print("p1 hand", player_1["hand"])
     print("p1 hand len", len(player_1["hand"]))
-    print("p2 hand", player_2["hand"])
-    print("p2 hand len", len(player_2["hand"]))
+    print("p2 hand", player_1["hand"])
+    print("p2 hand len", len(player_1["hand"]))
 
 
     return game_dict
@@ -33,27 +33,7 @@ def play_round(p1:dict,p2:dict):
             p2["won_pile"].append(p1_card)
             p2["won_pile"].append(p2_card)
         else:
-            #TODO IMPLEMENT WAR
             "WAR"
-        
-    if len(p1["won_pile"]) > len(p2["won_pile"]):
-        print(f"{p1["name"]} WINS!")
-    elif len(p1["won_pile"]) < len(p2["won_pile"]):
-        print(f"{p2["name"]} WINS!")
-    else:
-        print("TIE <:>")
-
-    
-    #TODO REMOVE===============================
-    print("===================================")
-    print("============FINAL===============")
-    print("===================================")
-    print("----player 1 ----","\n",p1,"\n","\n")
-    print("pool",len(p1["won_pile"]))
-    print("----player 2 ----","\n",p2,"\n","\n")
-    print("pool: ",len(p2["won_pile"]))
-    #TODO REMOVE===============================
-
     return
 
 def create_player(name:str = "") -> dict:

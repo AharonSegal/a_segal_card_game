@@ -70,5 +70,6 @@ def shuffle(deck:list[dict]) -> list[dict]:
     print("shuffeled deck : ", deck )
     print("size", len(deck))
 
-
     return deck
+
+
